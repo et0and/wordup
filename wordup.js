@@ -32,6 +32,8 @@ function scrubber(string) {
     .replace(/<p><strong>&nbsp;<\/strong><\/p>/g, "")
     .replace(/<strong>&nbsp;<\/strong>/g, "")
     .replace(/<p>&nbsp;<\/p>/g, "")
+    .replace(/&amp;/g, "&")
+    .replace(/&#39;/g, "'")
     .replace(/<h1>&nbsp;<\/h1>/g, "")
     .replace(/<h2>&nbsp;<\/h2>/g, "")
     .replace(/<h3>&nbsp;<\/h3>/g, "")
