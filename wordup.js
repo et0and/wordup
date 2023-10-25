@@ -1,6 +1,3 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-
-/* global CKEDITOR, TurndownService */
 var turndownService = new TurndownService({
   bulletListMarker: "-",
   headingStyle: "atx",
@@ -141,5 +138,3 @@ convertButton.addEventListener("click", wordup);
 linkRelCheckbox.addEventListener("click", wordup);
 markdownCheckbox.addEventListener("click", wordup);
 domainFilterCheckbox.addEventListener("click", wordup);
-
-});
