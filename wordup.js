@@ -25,6 +25,10 @@ function scrubber(string) {
   var scrubbed = string;
 
   scrubbed = scrubbed
+    .replace(/ class="[^"]*"/g, "")
+    .replace(/<font[^>]*>(.*?)<\/font>/g, "\$1")
+    .replace(/ style="[^"]*"/g, "")
+    .replace(/<\/?span[^>]*>/g,"")
     .replace(/<p><strong>&nbsp;<\/strong><\/p>/g, "")
     .replace(/<strong>&nbsp;<\/strong>/g, "")
     .replace(/<p>&nbsp;<\/p>/g, "")
