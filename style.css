@@ -27,8 +27,8 @@ p{
 }
 textarea{
     border: 1px solid #ccc;
-    height: 396px;
-    width: 500px;
+    height: 400px;
+    width: 100%;
 }
 button{
     background-color:#81ecec;
